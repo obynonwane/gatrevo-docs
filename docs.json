@@ -16,12 +16,12 @@
   "topbarLinks": [
     {
       "name": "Dashboard",
-      "url": "https://app.gatrevo.com/dashboard"
+      "url": "https://www.gatrevo.com/dashboard"
     }
   ],
   "topbarCtaButton": {
     "name": "Get started",
-    "url": "https://app.gatrevo.com/signup"
+    "url": "https://www.gatrevo.com/signup"
   },
   "navigation": {
     "tabs": [
