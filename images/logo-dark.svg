@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#6C3FF5"/>
-  <text x="40" y="22" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Gatrevo</text>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#1c1c1e"/>
+  <path d="M 96,208 L 256,64 L 416,208" stroke="white" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96,304 L 256,448 L 416,304" stroke="white" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
