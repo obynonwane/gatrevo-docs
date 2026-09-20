@@ -7,14 +7,11 @@
     "light": "/images/logo-light.svg",
     "href": "https://gatrevo.com"
   },
+  "favicon": "/images/logo-dark.svg",
   "colors": {
     "primary": "#6C3FF5",
     "light": "#8B63F7",
-    "dark": "#5226D4",
-    "anchors": {
-      "from": "#6C3FF5",
-      "to": "#2D7D52"
-    }
+    "dark": "#5226D4"
   },
   "topbarLinks": [
     {
@@ -26,73 +23,72 @@
     "name": "Get started",
     "url": "https://app.gatrevo.com/signup"
   },
-  "tabs": [],
-  "anchors": [
-    {
-      "name": "Contact support",
-      "icon": "envelope",
-      "url": "mailto:hello@gatrevo.com"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Getting started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "getting-started/onboarding",
-        "getting-started/invite-team"
-      ]
-    },
-    {
-      "group": "Campaigns",
-      "pages": [
-        "campaigns/overview",
-        "campaigns/new-prospects",
-        "campaigns/from-contacts",
-        "campaigns/approving-gates",
-        "campaigns/drafts"
-      ]
-    },
-    {
-      "group": "Sequences",
-      "pages": [
-        "sequences/overview",
-        "sequences/ab-testing"
-      ]
-    },
-    {
-      "group": "Contacts",
-      "pages": [
-        "contacts/overview",
-        "contacts/csv-import"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "integrations/slack",
-        "integrations/hubspot",
-        "integrations/apollo",
-        "integrations/gmail-outlook",
-        "integrations/notion-drive"
-      ]
-    },
-    {
-      "group": "Account",
-      "pages": [
-        "account/team",
-        "account/billing",
-        "account/data-export"
-      ]
-    },
-    {
-      "group": "Troubleshooting",
-      "pages": [
-        "troubleshooting"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "getting-started/onboarding",
+              "getting-started/invite-team"
+            ]
+          },
+          {
+            "group": "Campaigns",
+            "pages": [
+              "campaigns/overview",
+              "campaigns/new-prospects",
+              "campaigns/from-contacts",
+              "campaigns/approving-gates",
+              "campaigns/drafts"
+            ]
+          },
+          {
+            "group": "Sequences",
+            "pages": [
+              "sequences/overview",
+              "sequences/ab-testing"
+            ]
+          },
+          {
+            "group": "Contacts",
+            "pages": [
+              "contacts/overview",
+              "contacts/csv-import"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/slack",
+              "integrations/hubspot",
+              "integrations/apollo",
+              "integrations/gmail-outlook",
+              "integrations/notion-drive"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/team",
+              "account/billing",
+              "account/data-export"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "website": "https://gatrevo.com"
   }
