@@ -1,0 +1,63 @@
+---
+title: Campaigns overview
+description: How Gatrevo's 3-gate campaign pipeline works.
+---
+
+A campaign is a targeted outreach run — Gatrevo finds the right prospects, drafts personalised emails, and enrolls them in your sequencer, all with your approval at every step.
+
+## The 3-gate pipeline
+
+No email ever sends without you approving it. Here's what each gate does:
+
+### Gate 1 — Target profile
+
+Gatrevo analyses your campaign request and builds an Ideal Customer Profile (ICP):
+- Company size, industry, location
+- Job titles to target
+- Keywords and signals to look for
+
+You review the ICP and either approve it or give feedback to refine it. Nothing happens until you approve.
+
+### Gate 2 — Prospect list
+
+Using your approved ICP, Gatrevo searches for matching companies and contacts. It automatically filters out:
+- Existing customers in your CRM
+- Contacts in active deals
+- Previously bounced or unsubscribed contacts
+- Any domains on your suppression list
+
+You see the list and approve which companies to proceed with.
+
+### Gate 3 — Email drafts
+
+Gatrevo drafts a personalised cold email for each approved contact. Drafts are grounded in your knowledge base — product positioning, case studies, FAQs — so every email reflects your actual value proposition.
+
+You can read each draft, edit it inline, and approve individually or in bulk ("Draft all" to approve everything at once).
+
+## Campaign statuses
+
+| Status | Meaning |
+|---|---|
+| `Setup` | Campaign is being configured |
+| `Gate 1 pending` | Waiting for you to approve the target profile |
+| `Gate 2 pending` | Waiting for you to approve the prospect list |
+| `Drafting` | Gatrevo is generating email drafts |
+| `Gate 3 pending` | Waiting for you to approve drafts |
+| `Done` | All approved contacts enrolled |
+| `Cancelled` | Campaign was cancelled |
+| `Limit reached` | Contact limit hit — upgrade to resume |
+
+## Two campaign types
+
+**Find new prospects** — Gatrevo searches for new contacts matching your ICP using Apollo or your connected prospecting tool. Goes through all 3 gates.
+
+**Use existing contacts** — Select contacts from your internal contact store and send them a campaign. Skips Gates 1 and 2 and goes straight to drafting.
+
+<CardGroup cols={2}>
+  <Card title="New prospects campaign" icon="magnifying-glass" href="/campaigns/new-prospects">
+    Find and target new contacts from scratch.
+  </Card>
+  <Card title="Contacts campaign" icon="address-book" href="/campaigns/from-contacts">
+    Run a campaign against your existing contact list.
+  </Card>
+</CardGroup>

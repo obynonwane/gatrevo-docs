@@ -1,0 +1,49 @@
+---
+title: Gmail & Outlook
+description: Send outreach directly from your work email with Gatrevo's native sender.
+---
+
+Gatrevo's native sender lets you skip Apollo entirely and send outreach emails directly from your real Gmail or Outlook inbox. Emails come from you — not a shared sending domain — which maximises deliverability and reply rates.
+
+## Why use the native sender
+
+- Emails appear to come directly from your work address
+- No shared sending domain — better inbox placement
+- Reply detection is built in — sequences pause automatically when a prospect replies
+- No Apollo subscription needed
+
+## Connecting Gmail
+
+1. Go to **Settings → Integrations → Native sender**
+2. Click **Connect Gmail**
+3. Sign in with your Google account and grant Gatrevo access
+4. Your Gmail account is now connected as the sending mailbox
+
+**Scopes required:** `gmail.send`, `gmail.readonly`, `userinfo.email`
+
+## Connecting Outlook
+
+1. Go to **Settings → Integrations → Native sender**
+2. Click **Connect Outlook**
+3. Sign in with your Microsoft account and grant Gatrevo access
+4. Your Outlook account is now connected as the sending mailbox
+
+**Scopes required:** `Mail.Send`, `Mail.Read`, `offline_access`, `User.Read`
+
+## How sending works
+
+Once connected, when you approve a draft:
+1. Gatrevo schedules the email according to your send preferences (working hours, send days)
+2. The email is sent from your Gmail or Outlook account at the scheduled time
+3. Gatrevo monitors your inbox for replies and pauses the sequence if one is detected
+
+## Send preferences
+
+Customise when Gatrevo sends emails in **Settings → Preferences**:
+- **Send hours** — e.g. 9am–5pm only
+- **Send days** — e.g. Monday–Friday only
+- **Timezone** — your local timezone
+
+<Warning>
+  Only one Gmail or Outlook account can be connected per rep. To switch accounts, disconnect the current one and connect the new one.
+</Warning>

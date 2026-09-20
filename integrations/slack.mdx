@@ -1,0 +1,49 @@
+---
+title: Slack
+description: Connect Gatrevo to your Slack workspace.
+---
+
+Slack is the primary interface for Gatrevo. Reps interact with the bot, receive gate approvals, and get campaign updates all through Slack.
+
+## Connecting Slack
+
+1. Go to **Settings → Integrations** (or the onboarding wizard)
+2. Click **Add to Slack**
+3. Select your workspace and click **Allow**
+4. You'll be redirected back to Gatrevo automatically
+
+Gatrevo only needs to be connected once per workspace. All team members on that Slack workspace can then interact with the bot.
+
+## How to use the bot
+
+**Direct message:**
+Find `@gatrevo` in your Slack sidebar and send a message:
+```
+Start a campaign targeting SaaS CTOs in Europe for our API monitoring tool
+```
+
+**@mention in a channel:**
+```
+@gatrevo what's stale in my pipeline?
+```
+
+**Slash command:**
+```
+/gatrevo draft https://linkedin.com/in/janedoe
+```
+Generates a cold email from a LinkedIn profile URL.
+
+## What the bot does
+
+- Delivers Gate 1, 2, and 3 approval requests with Approve/Reject buttons
+- Sends morning pipeline digests to reps
+- Notifies you of replies, bounces, and campaign completions
+- Responds to natural language requests ("draft all", "pipeline update", "start a campaign")
+
+## Disconnecting Slack
+
+Go to **Settings → Integrations → Slack** and click **Disconnect**. The bot will stop responding to your workspace. Your campaigns and data are not affected.
+
+<Note>
+  Gatrevo works on Slack's free plan. No paid Slack subscription is required.
+</Note>

@@ -1,0 +1,46 @@
+---
+title: CSV import
+description: Import contacts in bulk from a CSV file.
+---
+
+You can import contacts into Gatrevo's contact store from any CSV file — CRM exports, event attendee lists, LinkedIn exports, or any spreadsheet.
+
+## CSV format
+
+Your CSV must include a header row. Supported columns:
+
+| Column | Required | Notes |
+|---|---|---|
+| `email` | Yes | Must be a valid email address |
+| `first_name` | No | |
+| `last_name` | No | |
+| `company` | No | |
+| `title` | No | Job title |
+| `industry` | No | Gatrevo normalises common variations automatically |
+
+Columns can be in any order. Extra columns are ignored.
+
+**Example:**
+```csv
+email,first_name,last_name,company,title,industry
+jane@acmecorp.com,Jane,Smith,Acme Corp,VP of Sales,SaaS
+john@widget.io,John,Doe,Widget Inc,CTO,Fintech
+```
+
+## Importing
+
+1. Go to **Contacts** → **Import CSV**
+2. Select your file
+3. Gatrevo previews the first few rows — confirm the mapping looks correct
+4. Click **Import**
+
+## What happens on import
+
+- Duplicates (matched by email) are skipped — existing contacts are not overwritten
+- Invalid email addresses are skipped with a warning
+- Industry values are normalised to Gatrevo's standard list (e.g. "SaaS" → "Technology", "FS" → "Financial Services")
+- Unknown industry values are stored as-is
+
+## After import
+
+Imported contacts appear immediately in your contact list and are available for campaigns. Go to **Campaigns** → **New campaign** → **Use existing contacts** to target them.

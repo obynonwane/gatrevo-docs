@@ -1,0 +1,28 @@
+---
+title: HubSpot
+description: Connect your HubSpot CRM to Gatrevo.
+---
+
+Connecting HubSpot lets Gatrevo check your CRM before every campaign to automatically exclude existing customers and contacts in active deals.
+
+## Connecting via Private App token
+
+1. In HubSpot, go to **Settings → Integrations → Private Apps**
+2. Click **Create a private app**
+3. Give it a name (e.g. "Gatrevo")
+4. Under **Scopes**, add:
+   - `crm.objects.contacts.read`
+   - `crm.objects.contacts.write`
+   - `crm.objects.notes.write`
+5. Click **Create app** → copy the token (starts with `pat-na1-...`)
+6. In Gatrevo, go to **Settings → Integrations → HubSpot** and paste the token
+
+## What Gatrevo does with HubSpot
+
+- **Deduplication** — checks every prospect against your HubSpot contacts before Gate 2. Existing customers and active deals are filtered out automatically.
+- **Notes** — logs a note on the HubSpot contact record when a draft is approved and sent.
+- **Auto-deal creation** — optionally creates a deal in HubSpot when a prospect replies positively (configurable in Settings).
+
+## Disconnecting HubSpot
+
+Go to **Settings → Integrations → HubSpot** and click **Disconnect**. Future campaigns will use Gatrevo's internal contact store for deduplication instead.

@@ -1,0 +1,40 @@
+---
+title: Contacts
+description: Managing your internal contact store in Gatrevo.
+---
+
+Gatrevo maintains an internal contact store — a record of every contact Gatrevo has ever enrolled, along with their outreach history. This is used for deduplication and for running campaigns against existing contacts.
+
+## What's stored
+
+For each contact, Gatrevo stores:
+- Name, email, company, job title
+- Industry
+- Last outreach status (enrolled, replied, bounced, unsubscribed)
+- Number of times enrolled
+- Deal created flag (if auto-deal is enabled)
+
+## Viewing contacts
+
+Go to **Contacts** in the dashboard to see your full contact list. You can:
+- Search by name, email, or company
+- Filter by industry
+- Sort by any column
+
+## Adding contacts manually
+
+1. Go to **Contacts** → **Add contact**
+2. Fill in the contact details
+3. Click **Save**
+
+## Contact statuses
+
+| Status | Meaning |
+|---|---|
+| — | Never contacted |
+| **Enrolled** | Currently in an active sequence |
+| **Replied** | Has replied to an outreach email |
+| **Bounced** | Email address bounced — excluded from future campaigns |
+| **Unsubscribed** | Opted out — permanently excluded |
+
+Bounced and unsubscribed contacts cannot be selected for campaigns. This is enforced automatically.

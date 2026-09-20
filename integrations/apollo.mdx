@@ -1,0 +1,29 @@
+---
+title: Apollo
+description: Connect Apollo as your sequencer and prospecting source.
+---
+
+Apollo is used by Gatrevo for two things: finding prospects (contact discovery) and enrolling approved contacts into email sequences.
+
+## Connecting Apollo
+
+1. In Apollo, go to **Settings → Integrations → API**
+2. Copy your **API Key**
+3. Go to **Settings → Email Accounts** and copy your **Email Account ID** (the ID of the mailbox you send from)
+4. In Gatrevo, go to **Settings → Integrations → Apollo** and enter both values
+
+## What Gatrevo does with Apollo
+
+- **Prospect discovery** — searches Apollo's database for contacts matching your campaign ICP (Gate 2)
+- **Sequence creation** — creates a sequence in Apollo with the steps and timing Gatrevo configured
+- **Contact enrollment** — enrolls each approved contact into the sequence in Apollo
+
+After enrollment, emails are sent and tracked inside Apollo. You can view sequence performance in both Apollo and the Gatrevo dashboard.
+
+## Disconnecting Apollo
+
+Go to **Settings → Integrations → Apollo** and click **Disconnect**. You can switch to Gatrevo's native sender (Gmail/Outlook) as an alternative.
+
+<Note>
+  You need both the API Key and Email Account ID for enrollment to work. Sequences can be created without the Email Account ID but contacts cannot be enrolled.
+</Note>

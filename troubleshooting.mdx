@@ -1,0 +1,70 @@
+---
+title: Troubleshooting
+description: Common issues and how to fix them.
+---
+
+## Bot not responding in Slack
+
+**Check the bot is installed:**
+Go to **Settings → Integrations → Slack**. If it shows as disconnected, click **Add to Slack** to reinstall.
+
+**Check you're messaging the right bot:**
+Search for `@gatrevo` in Slack. Make sure you're DMing the bot, not a channel called gatrevo.
+
+**Check your plan:**
+If your workspace is on the Starter plan and has hit the contact limit, campaigns are paused but the bot should still respond. If the bot is completely unresponsive, contact support.
+
+---
+
+## Campaign stuck on a status
+
+**Gate pending but no Slack message:**
+Check that Slack is connected in **Settings → Integrations**. If it was recently disconnected and reconnected, the gate message may have been lost — go to the campaign in the dashboard and approve from there.
+
+**Drafting for a long time:**
+Draft generation can take a few minutes for large contact lists. If it's been more than 15 minutes, contact support with your campaign ID.
+
+---
+
+## Emails not sending
+
+**Using Apollo:**
+Check your Apollo API key and Email Account ID are still valid in **Settings → Integrations → Apollo**. Apollo keys can expire or be revoked.
+
+**Using native sender (Gmail/Outlook):**
+Check your Gmail or Outlook connection in **Settings → Integrations → Native sender**. If the token has expired, disconnect and reconnect.
+
+**Check send preferences:**
+Go to **Settings → Preferences** and confirm your send hours and send days are set correctly. Emails are only scheduled within your configured windows.
+
+---
+
+## Contacts showing as bounced incorrectly
+
+If a contact is marked as bounced but you believe the email is valid, you can reset their status. Go to **Contacts** → find the contact → click **Edit** → change the status. Note: the next email send will confirm whether the address is valid.
+
+---
+
+## HubSpot not deduplicating correctly
+
+Make sure your HubSpot Private App token has the `crm.objects.contacts.read` scope. Without read access, Gatrevo cannot check existing contacts and will skip deduplication.
+
+Go to HubSpot → **Settings → Integrations → Private Apps** → your Gatrevo app → verify the scopes are correct.
+
+---
+
+## Can't connect Slack to a different workspace
+
+The Slack OAuth page only shows workspaces you're signed into on `slack.com` in that browser. If the workspace you want isn't showing:
+1. Open a new tab and go to `slack.com`
+2. Sign into the target workspace
+3. Retry the OAuth flow
+
+---
+
+## Still need help?
+
+Email us at [hello@gatrevo.com](mailto:hello@gatrevo.com) and include:
+- Your workspace name
+- The campaign ID (if relevant)
+- What you expected to happen and what happened instead

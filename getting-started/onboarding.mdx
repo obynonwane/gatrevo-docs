@@ -1,0 +1,54 @@
+---
+title: Onboarding walkthrough
+description: A step-by-step guide to the Gatrevo setup wizard.
+---
+
+When you first sign up, Gatrevo walks you through a setup wizard to connect your tools.
+You can skip any step and connect later from **Settings → Integrations**.
+
+## Step 1 — CRM
+
+Gatrevo checks your CRM before every campaign to avoid emailing existing customers or contacts in active deals.
+
+**HubSpot**
+1. In HubSpot, go to **Settings → Integrations → Private Apps**
+2. Create a new private app with these scopes: `crm.objects.contacts.write`, `crm.objects.notes.write`
+3. Copy the token (starts with `pat-`) and paste it into Gatrevo
+
+**No CRM**
+Choose "No CRM — use internal contact store" to skip this step. Gatrevo will track every contact it has ever enrolled and deduplicate against that history. You can connect a CRM at any time from Settings.
+
+## Step 2 — Sequencer
+
+This is where your outreach emails are enrolled and sent from.
+
+**Apollo**
+1. In Apollo, go to **Settings → API** and copy your API key
+2. Go to **Settings → Email Accounts** and copy your Email Account ID
+3. Paste both into Gatrevo
+
+**Gmail or Outlook (no sequencer needed)**
+Choose "Send via Gmail or Outlook" to use Gatrevo's built-in native sender. Emails are sent directly from your real work email address for maximum deliverability. Connect your account from **Settings → Integrations** after setup.
+
+## Step 3 — Channel
+
+This is where your team interacts with Gatrevo.
+
+**Slack (recommended)**
+Click **Add to Slack**. You'll be taken to Slack to authorise Gatrevo in your workspace. Once approved, you'll be redirected back to Gatrevo automatically.
+
+After connecting, reps can:
+- DM `@gatrevo` directly
+- @mention the bot in any channel
+- Use `/gatrevo draft <linkedin_url>` to generate a cold email
+
+**Web dashboard only**
+If you prefer not to use Slack, all campaign management is available in the Gatrevo web dashboard. You can connect Slack at any time from Settings.
+
+## Completion
+
+Once setup is complete you'll see a summary of what's connected. Click **Go to dashboard** to start using Gatrevo.
+
+<Tip>
+  Everything connected during onboarding can be changed or disconnected at any time from **Settings → Integrations**.
+</Tip>

@@ -1,0 +1,45 @@
+---
+title: Approving gates
+description: How to review and approve campaign gates in Slack and the dashboard.
+---
+
+Every campaign has up to three approval gates. Nothing sends without your explicit approval.
+
+## Approving in Slack
+
+When a gate is ready for review, `@gatrevo` sends you a message in Slack with the details and two buttons: **Approve** and **Reject**.
+
+- **Approve** — moves the campaign to the next stage
+- **Reject** — cancels or pauses the campaign (you can restart with refined criteria)
+
+For Gate 3 (email drafts), you'll also see a **Draft all** button to approve all drafts at once without reviewing each one individually.
+
+## Approving in the dashboard
+
+Go to **Campaigns** and click on any campaign with a pending status. The campaign detail page shows the current gate and what's waiting for your review.
+
+## Giving feedback on rejection
+
+When you reject Gate 1 (target profile), Gatrevo asks what you'd like to change. Reply in Slack with your feedback:
+
+```
+Focus on companies with 50-200 employees only and remove the healthcare industry
+```
+
+Gatrevo will revise the ICP and present it again for approval.
+
+## Gate 3 — Individual draft review
+
+For email drafts, you can:
+- **Read each draft** before approving
+- **Edit inline** — make changes directly in the draft editor in the dashboard
+- **Approve individually** — approve one at a time
+- **Draft all** — approve everything in one tap
+
+<Warning>
+  Once a draft is approved and the contact is enrolled in your sequencer, the email is scheduled. It cannot be cancelled from Gatrevo — you'd need to pause the sequence in Apollo or your native sequencer directly.
+</Warning>
+
+## Auto-approval (advanced)
+
+In **Settings → Preferences**, you can enable auto-approval for Gate 1 when the ICP confidence score exceeds a threshold you set. This is useful for high-volume teams running frequent campaigns with consistent target profiles.
